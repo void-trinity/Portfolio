@@ -16,7 +16,7 @@ const projects = [
     },
     {
         title: 'Byara Premier League',
-        description: 'A react native application that uses mongodb database and node backend. During the COVID pandemic, one of the major sources of enterntainment was online board games. This app serves as a leaderboard cum points tracker to make the events more competitive between friends and family. Keeps track of all the games played along with participants and their standings. Also has a global leaderboard showing the current rank of the players. Uses social login for authentication and JWT access token.',
+        description: 'A react native application that uses mongodb database and node backend. During the COVID pandemic, one of the major sources of entertainment is online board games. This app serves as a leaderboard cum points tracker to make the events more competitive between friends and family. Keeps track of all the games played along with participants and their standings. Also has a global leaderboard showing the current rank of the players. Uses social login for authentication and JWT access token.',
         link: 'https://github.com/void-trinity/BPL-Backend'
     },
     {
