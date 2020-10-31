@@ -3,7 +3,7 @@ import { Grid, Paper, Typography } from '@material-ui/core';
 import { GitHub, LinkedIn, Facebook, Twitter, YouTube } from '@material-ui/icons';
 
 import styles from './styles';
-import { name, profile, links } from '../../constants/intro';
+import intro from '../../constants/intro';
 
 const getSocialButtons = (data) => {
     const classes = styles();
@@ -49,11 +49,14 @@ const getSocialButtons = (data) => {
                     </a>
                 </Grid>
             );
+        default:
+            return <></>;
     }
 }
 
 const Header = () => {
     const classes = styles();
+    const { name, profile, links } = intro;
     return (
         <Grid container>
             <Grid item xs={12} >

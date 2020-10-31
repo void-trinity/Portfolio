@@ -4,7 +4,7 @@ const intro = {
     links: [
         {
             name: 'github',
-            link: 'https://www.linkedin.com/in/siddharth-chandra/'
+            link: 'https://github.com/void-trinity/'
         },
         {
             name: 'linkedin',
