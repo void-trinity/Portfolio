@@ -3,6 +3,54 @@ import { Grid, Paper, Typography } from '@material-ui/core';
 import { GitHub, LinkedIn, Facebook, Twitter, YouTube } from '@material-ui/icons';
 
 import styles from './styles';
+import { name, profile, links } from '../../constants/intro';
+
+const getSocialButtons = (data) => {
+    const classes = styles();
+    const { name, link } = data;
+    switch(name) {
+        case 'github':
+            return (
+                <Grid item className={classes.icon}>
+                    <a href={link} target="_blank" rel="noopener noreferrer" className={classes.a}>
+                        <GitHub fontSize='large' />
+                    </a>
+                </Grid>
+            );
+        case 'linkedin':
+            return (
+                <Grid item className={classes.icon}>
+                    <a href={link} target="_blank" rel="noopener noreferrer" className={classes.a}>
+                        <LinkedIn fontSize='large' />
+                    </a>
+                </Grid>
+            );
+        case 'facebook':
+            return (
+                <Grid item className={classes.icon}>
+                    <a href={link} target="_blank" rel="noopener noreferrer" className={classes.a}>
+                        <Facebook fontSize='large' />
+                    </a>
+                </Grid>
+            );
+        case 'twitter':
+            return (
+                <Grid item className={classes.icon}>
+                    <a href={link} target="_blank" rel="noopener noreferrer" className={classes.a}>
+                        <Twitter fontSize='large' />
+                    </a>
+                </Grid>
+            );
+        case 'youtube':
+            return (
+                <Grid item className={classes.icon}>
+                    <a href={link} target="_blank" rel="noopener noreferrer" className={classes.a}>
+                        <YouTube fontSize='large' />
+                    </a>
+                </Grid>
+            );
+    }
+}
 
 const Header = () => {
     const classes = styles();
@@ -11,37 +59,16 @@ const Header = () => {
             <Grid item xs={12} >
                 <Paper elevation={0} className={classes.paper}>
                     <Typography variant='h3' style={{ color: '#272A34', fontWeight: 'bold' }}>
-                        Siddharth Chandra
+                        {name}
                     </Typography>
                     <Typography variant='h5' style={{ color: '#7d7d7d' }}>
-                        Full Stack Developer
+                        {profile}
                     </Typography>
                     <Grid style={{ marginTop: '20px' }} xs={12} sm={4} container justify='space-between' direction='row'>
-                        <Grid item className={classes.icon}>
-                            <a href="https://github.com/void-trinity" target="_blank" rel="noopener noreferrer" className={classes.a}>
-                                <GitHub fontSize='large' />
-                            </a>
-                        </Grid>
-                        <Grid item className={classes.icon}>
-                            <a href="https://www.linkedin.com/in/siddharth-chandra/" rel="noopener noreferrer" target="_blank" className={classes.a}>
-                                <LinkedIn fontSize='large' />
-                            </a>
-                        </Grid>
-                        <Grid item className={classes.icon}>
-                            <a href="https://www.facebook.com/iamsiddharthchandra" target="_blank" rel="noopener noreferrer" className={classes.a}>
-                                <Facebook fontSize='large' />
-                            </a>
-                        </Grid>
-                        <Grid item className={classes.icon}>
-                            <a href="https://twitter.com/tonne_machine" target="_blank" rel="noopener noreferrer" className={classes.a}>
-                                <Twitter fontSize='large' />
-                            </a>
-                        </Grid>
-                        <Grid item className={classes.icon}>
-                            <a href="https://www.youtube.com/channel/UCng2Y_G4cznPQTFgITQiHZg" target="_blank" rel="noopener noreferrer" className={classes.a}>
-                                <YouTube fontSize='large' />
-                            </a>
-                        </Grid>
+                        
+                        {links.map((item, index) => {
+                            return getSocialButtons(item);
+                        })}
                     </Grid>
                 </Paper>
             </Grid>
