@@ -1,5 +1,13 @@
 const workExp = [
     {
+        title: 'Software Development Engineer (Scout Core Platform)',
+        company: 'Soroco India Private Limited',
+        date: 'Sept 2019 - Present',
+        description: [
+            'Working as an SDE with the Algorithms (Jerry) team for the Scout Core Product'
+        ]
+    },
+    {
         title: 'Intern',
         company: 'Reliance Industries Limited',
         date: 'May 2019 - July 2019',
