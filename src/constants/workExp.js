@@ -1,10 +1,18 @@
 const workExp = [
     {
-        title: 'Software Development Engineer',
-        company: 'Soroco India Private Limited',
-        date: 'Sept 2019 - Present',
+        title: 'Software Development Engineer - 1',
+        company: 'Amazon Development Center India Private Limited',
+        date: 'July 2021 - Present',
         description: [
-            'Working as a SDE with the Algorithms (Jerry) team for the Scout Core Product.'
+            'Working as a SDE-1 with the PARS Tech team.'
+        ]
+    },
+    {
+        title: 'Software Engineer',
+        company: 'Soroco India Private Limited',
+        date: 'Sept 2020 - July 2021',
+        description: [
+            'Worked as a SE with the Algorithms (Jerry) team for the Scout Core Product.'
         ]
     },
     {
